@@ -1,0 +1,47 @@
+.container{
+  pointer-events: auto;
+  .label{
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: 700;
+    color: #42567A ;
+    margin-left: 70%;
+    font-size: 1.3rem;
+    width: 150px;
+    text-align: left;
+    line-height: 50%;
+  }
+  .circle{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: solid 1px #303E5880;
+    transform: scale(0.12);
+    background-color: transparent;
+    pointer-events: auto;
+    .text{
+      font-size: 1.1em;
+      transform: rotate(-120deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1024px){
+  .container{
+    .label{
+      font-size: 1.8rem;
+    }
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  .container{
+    .label{
+      font-size: 1.4rem;
+    }
+    .circle{
+      .text{
+        font-size: 1.2em;
+      }
+    }
+  }
+}

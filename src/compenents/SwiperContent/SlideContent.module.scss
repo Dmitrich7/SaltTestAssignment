@@ -1,0 +1,32 @@
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+  font-family: "PT Sans";
+  width: 70%;
+  background-color: #f4f5f9;
+
+  .head{
+    font-family: "Bebas Neue";
+    align-self: flex-start;
+    height: 10%;
+    color: #3877EE;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .content{
+    text-align: left;
+    color: #42567A;
+    font-size: 0.7em;
+    line-height: 20px;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 425px){
+  .container{
+    width: 40%;
+  }
+}
